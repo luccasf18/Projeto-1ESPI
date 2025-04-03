@@ -1,0 +1,66 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+body{
+    background: transparent;
+
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+header{
+    background: yellow;
+    text-align: center;
+    padding: 30px;
+
+}
+
+#conteudo{
+    background: blue;
+    color: blueviolet;
+    text-align: center;
+    padding: 100px;
+    flex: 2;
+}
+#conteudo article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+aside{
+    background: lightblue;
+    padding: 20px;
+    flex: 2;
+
+}
+footer{
+background: blue;
+padding: 40px;
+color: aliceblue;
+
+}
+/* responsividade */
+@media (min-width:700px){
+#container{
+    flex-direction: column;
+}
+#conteudoAside{
+    display: flex;
+    flex-grow: 1;
+
+}
+aside{
+    flex:1;
+}
+}
